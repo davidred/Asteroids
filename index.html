@@ -30,22 +30,11 @@
   imgObj.src = "lib/images/deathstar.gif";
 
   images = [];
-  var image0 = new Image(), image1 = new Image(), image2 = new Image(), image3 = new Image(), image4 = new Image(), image5 = new Image(), image6 = new Image();
-  image0.src = 'lib/images/planet0.png';
-  image1.src = 'lib/images/planet1.png';
-  image2.src = 'lib/images/planet2.png';
-  image3.src = 'lib/images/planet3.png';
-  image4.src = 'lib/images/planet4.png';
-  image5.src = 'lib/images/planet5.png';
-  image6.src = 'lib/images/planet6.png';
-
-  images.push(image0);
-  images.push(image1);
-  images.push(image2);
-  images.push(image3);
-  images.push(image4);
-  images.push(image5);
-  images.push(image6);
+  for (var i=0; i<7; i++) {
+    var image = new Image();
+    image.src = 'lib/images/planet'+i+'.png';
+    images.push(image);
+  }
 
   var canvas = document.getElementById("game-canvas");
   var ctx = canvas.getContext('2d');
