@@ -17,10 +17,19 @@ body {
 
 .container {
   height: 100%;
+  text-align: center;
+}
+
+.container > h1 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Signika', sans-serif;
 }
 
 #game-canvas {
   border: 10px solid black;
   display: block;
-  margin: 250px auto;
+  background: black;
+  margin: 0 auto;
 }

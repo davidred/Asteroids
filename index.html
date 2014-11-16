@@ -9,20 +9,25 @@
   <script src="lib/ship.js"></script>
   <script src="lib/explodingAsteroid.js"></script>
   <script src="lib/explosionShard.js"></script>
+  <script src="lib/star.js"></script>
   <script src="lib/game.js"></script>
   <script src="lib/gameView.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Sigmar+One|Signika' rel='stylesheet' type='text/css'>
   <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
   <div class="container">
-    <canvas id="game-canvas" width="500" height="500"></canvas>    
+    <h1>| PLANETARY ANNIHILATION |</h1>
+
+    <canvas id="game-canvas" width="500" height="500"></canvas>
   </div>
 
 
 <script>
   imgObj = new Image();
-  imgObj.src = "lib/death_star.png";
+  imgObj.src = "lib/images/deathstar.gif";
 
   images = [];
   var image0 = new Image(), image1 = new Image(), image2 = new Image(), image3 = new Image(), image4 = new Image(), image5 = new Image(), image6 = new Image();
